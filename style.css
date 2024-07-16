@@ -10,6 +10,7 @@ h2 {
   font-size: 6rem;
   font-family: "DM Sans", sans-serif;
   font-weight: bold;
+  margin-top: 2.5rem;
 }
 
 h3 {
@@ -32,18 +33,139 @@ body {
   background-color: #f9f9fd;
 }
 
-/* General styles for website sections */
-.parallax {
-  height: 100vh;
-  /*min-width: 100vw;*/
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+  h1,
+  h2 {
+    font-size: 3.5rem;
+  }
+}
+/* Mobile Styling */
+@media only screen and (max-width: 812px) {
+  body {
+    font-size: 0.9rem;
+    word-break: break-word;
+  }
+
+  h1,
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3,
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  body .section-5 {
+    background-image: url(bilder/UI-mobile.png);
+  }
+  body .section-1 {
+    background-image: url(bilder/mobile-landing.png);
+  }
+
+  .section-3,
+  .flex-container,
+  .flex-row {
+    flex-direction: column;
+  }
+
+  body .flex-container {
+    row-gap: 2rem;
+  }
+  body #container-flex {
+    padding-left: 0rem;
+  }
+
+  body .section-2 {
+    padding: 3rem;
+  }
+
+  body .flex-row {
+    row-gap: 1.5rem;
+  }
+  body #logo {
+    padding-left: 7rem;
+  }
+
+  #mobile {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(bilder/vorteile/vorteil-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  body #text {
+    position: absolute;
+    bottom: 30rem;
+  }
+
+  body .card {
+    width: 20rem;
+    height: 18rem;
+  }
+
+  .card #auge {
+    padding-top: 0rem;
+    width: 30%;
+  }
+
+  .card #nase {
+    padding-top: 0rem;
+    width: 20%;
+  }
+
+  .card #ohr {
+    padding-top: 0rem;
+    width: 20%;
+  }
+
+  body .section-3 {
+    row-gap: 2rem;
+  }
+
+  .card .img-container {
+    margin-top: 1.5rem;
+  }
+  .section-3 #card-middle {
+    height: 22rem;
+    width: 22rem;
+  }
+
+  body .content-container {
+    padding-left: 3rem;
+  }
+
+  body .content-container p {
+    width: 100%;
+  }
+
+  body .indent {
+    padding-left: 0rem;
+  }
+
+  body .section-5 {
+    padding-left: 3rem;
+  }
+
+  .section-5 #indent {
+    width: 100%;
+    padding-left: 0rem;
+  }
+
+  body .section-5 p {
+    padding-right: 0rem;
+  }
+
+  body .flex-small-container {
+    align-items: center;
+  }
 }
 
 /* Section 1 */
 .section-1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(bilder/placeholder_video.png);
+    url(bilder/landing.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   display: flex;
   height: 100vh;
 }
@@ -60,15 +182,24 @@ body {
   padding: 3rem;
 }
 
+#container-flex {
+  padding-left: 4rem;
+}
+
 /* Section 2 */
 .section-2 {
   padding: 3rem;
+  padding-left: 7rem;
   padding-right: 0rem;
+  height: 100vh;
 }
 
 .section-2 h3 {
   color: #8c36f7;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
+
 .flex-container {
   display: flex;
   column-gap: 10rem;
@@ -78,6 +209,8 @@ body {
   display: flex;
   flex-basis: 100%;
   flex-direction: column;
+  justify-content: center;
+  row-gap: 1rem;
 }
 #chip-img {
   width: 50%;
@@ -86,6 +219,7 @@ body {
 .flex-row {
   display: flex;
   column-gap: 5rem;
+  flex-basis: 100%;
 }
 
 .flex-column {
@@ -100,6 +234,7 @@ body {
   padding: 3rem;
   align-items: center;
   justify-content: center;
+  height: 100vh;
 }
 
 .card {
@@ -113,6 +248,8 @@ body {
 .card h3 {
   color: #8c36f7;
   text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .container {
@@ -129,24 +266,22 @@ body {
 
 #nase {
   width: 40%;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 #ohr {
   width: 28%;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 #auge {
   width: 40%;
-  margin-left: auto;
-  margin-right: auto;
+  padding-top: 3rem;
 }
 
 .img-container {
-  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2.5rem;
 }
 
 .img-container img {
@@ -155,88 +290,82 @@ body {
 }
 
 /* Section 4 */
-.slides{
-    scroll-snap-type: x mandatory;
-    display: flex;
-    overflow-x: scroll;
+.slides {
+  display: flex;
+  flex-direction: column;
 }
-
-/*.slides::-webkit-scrollbar {
-    display: none;
-  } */
 
 .slide {
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   color: white;
   height: 100vh;
   min-width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  scroll-snap-align: start;
-  overscroll-behavior-x: contain;
+  height: 100vh;
 }
 
 .slide-1 {
-  background-image: url(bilder/funktionen/Funktion_1.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(bilder/funktionen/Funktion_1.png);
 }
 
 .slide-2 {
-  background-image: url(bilder/funktionen/Funktion_2.png);
-}
-
-.slide-3 {
-  background-image: url(bilder/funktionen/Funktion_3.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(bilder/funktionen/Funktion_2.png);
 }
 
 .slide-4 {
-  background-image: url(bilder/funktionen/Funktion_4.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(bilder/funktionen/Funktion_4.png);
 }
 
-.content-container{
-    padding: 3rem;
+.content-container {
+  padding: 3rem;
+  padding-left: 7rem;
 }
 
-.content-container p{
-    width: 25%;
+.content-container p {
+  width: 35%;
 }
 
 /* Section 5 */
-.section-5{
-    background-image: url(bilder/UI.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    padding: 3rem;
+.section-5 {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2)
+    ),
+    url(bilder/UI.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding: 3rem;
+  padding-left: 7rem;
 }
 
-.section-5 p{
-    padding-right: 7rem;
+.section-5 p {
+  padding-right: 7rem;
 }
-#indent{
-    width: 25%;
-    padding-left: 3rem;
-    background-color: white;
+
+#indent {
+  width: 35%;
+  padding-left: 3rem;
 }
 
 /* Section 6 */
 .slide-5 {
-    background-image: url(bilder/vorteile/vorteil_1.png);
-  }
+  background-image: url(bilder/vorteile/vorteil_1.png);
+}
 
-  .slide-6 {
-    background-image: url(bilder/vorteile/Vorteil_2.png);
-  }
+.slide-6 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(bilder/vorteile/Vorteil_2.png);
+}
 
-  .slide-7 {
-    background-image: url(bilder/vorteile/vorteil_3.png);
-  }
+.slide-7 {
+  background-image: url(bilder/vorteile/vorteil_3.png);
+}
 
-  .slide-8 {
-    background-image: url(bilder/vorteile/Vorteil_4.png);
-  }
-
-  .indent{
-    padding-left: 7rem;
-  }
+.indent {
+  padding-left: 3rem;
+  margin-bottom: 5rem;
+}
