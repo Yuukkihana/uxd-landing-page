@@ -1,0 +1,69 @@
+/* General styles for the whole page */
+h1{
+    font-size: 6.25rem;
+    font-family: "DM Sans", sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+h2{
+    font-size: 6rem;
+    font-family: "DM Sans", sans-serif;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 3rem;
+    font-family: "DM Sans", sans-serif;
+    font-weight: medium;
+}
+
+h4{
+    font-size: 2rem;
+    font-family: "DM Sans", sans-serif;
+    font-weight: medium;
+}
+
+body{
+    font-size: 1.25rem;
+    font-family: "Inter", sans-serif;
+    font-weight: normal;
+    margin: 0px;
+}
+
+
+/* General styles for website sections */
+.parallax{
+    height: 100vh;
+    min-width: 100vw;
+}
+
+
+
+/* Section 1 */
+.section-1{
+    background-image: url(bilder/placeholder_video.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+#text{
+    align-self: flex-end;
+    padding: 3rem;
+}
+
+#logo{
+    align-self: flex-start;
+    padding: 3rem;
+}
+
+/* Section 2 */
+.flex-container{
+    display: flex;
+    flex-direction: column;
+}
+
+#chip-img{
+    width: 20%;
+}
