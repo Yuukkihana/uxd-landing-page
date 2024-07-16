@@ -1,69 +1,242 @@
 /* General styles for the whole page */
-h1{
-    font-size: 6.25rem;
-    font-family: "DM Sans", sans-serif;
-    font-weight: bold;
-    color: white;
+h1 {
+  font-size: 6.25rem;
+  font-family: "DM Sans", sans-serif;
+  font-weight: bold;
+  color: white;
 }
 
-h2{
-    font-size: 6rem;
-    font-family: "DM Sans", sans-serif;
-    font-weight: bold;
+h2 {
+  font-size: 6rem;
+  font-family: "DM Sans", sans-serif;
+  font-weight: bold;
 }
 
-h3{
-    font-size: 3rem;
-    font-family: "DM Sans", sans-serif;
-    font-weight: medium;
+h3 {
+  font-size: 3rem;
+  font-family: "DM Sans", sans-serif;
+  font-weight: medium;
 }
 
-h4{
-    font-size: 2rem;
-    font-family: "DM Sans", sans-serif;
-    font-weight: medium;
+h4 {
+  font-size: 2rem;
+  font-family: "DM Sans", sans-serif;
+  font-weight: medium;
 }
 
-body{
-    font-size: 1.25rem;
-    font-family: "Inter", sans-serif;
-    font-weight: normal;
-    margin: 0px;
+body {
+  font-size: 1.25rem;
+  font-family: "Inter", sans-serif;
+  font-weight: normal;
+  margin: 0px;
+  background-color: #f9f9fd;
 }
-
 
 /* General styles for website sections */
-.parallax{
-    height: 100vh;
-    min-width: 100vw;
+.parallax {
+  height: 100vh;
+  /*min-width: 100vw;*/
 }
-
-
 
 /* Section 1 */
-.section-1{
-    background-image: url(bilder/placeholder_video.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
+.section-1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(bilder/placeholder_video.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 100vh;
 }
 
-#text{
-    align-self: flex-end;
-    padding: 3rem;
+#text {
+  padding: 3rem;
+  position: absolute;
+  bottom: 0px;
+  padding-bottom: 0.5rem;
 }
 
-#logo{
-    align-self: flex-start;
-    padding: 3rem;
+#logo {
+  align-self: flex-start;
+  padding: 3rem;
 }
 
 /* Section 2 */
-.flex-container{
-    display: flex;
-    flex-direction: column;
+.section-2 {
+  padding: 3rem;
+  padding-right: 0rem;
 }
 
-#chip-img{
-    width: 20%;
+.section-2 h3 {
+  color: #8c36f7;
 }
+.flex-container {
+  display: flex;
+  column-gap: 10rem;
+}
+
+.flex-small-container {
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
+}
+#chip-img {
+  width: 50%;
+}
+
+.flex-row {
+  display: flex;
+  column-gap: 5rem;
+}
+
+.flex-column {
+  flex-basis: 100%;
+}
+
+/* Section 3 */
+.section-3 {
+  background-color: black;
+  display: flex;
+  column-gap: 5rem;
+  padding: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: #161616;
+  width: 23.5rem;
+  height: 33rem;
+  color: white;
+  border-radius: 2rem;
+}
+
+.card h3 {
+  color: #8c36f7;
+  text-align: center;
+}
+
+.container {
+  padding: 2rem;
+  padding-top: 0.5rem;
+}
+
+#card-middle {
+  height: 37.5rem;
+  border: solid;
+  border-width: 2px;
+  border-color: #8c36f7;
+}
+
+#nase {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#ohr {
+  width: 28%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#auge {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-container {
+  margin: auto;
+}
+
+.img-container img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Section 4 */
+.slides{
+    scroll-snap-type: x mandatory;
+    display: flex;
+    overflow-x: scroll;
+}
+
+/*.slides::-webkit-scrollbar {
+    display: none;
+  } */
+
+.slide {
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  scroll-snap-align: start;
+  overscroll-behavior-x: contain;
+}
+
+.slide-1 {
+  background-image: url(bilder/funktionen/Funktion_1.png);
+}
+
+.slide-2 {
+  background-image: url(bilder/funktionen/Funktion_2.png);
+}
+
+.slide-3 {
+  background-image: url(bilder/funktionen/Funktion_3.png);
+}
+
+.slide-4 {
+  background-image: url(bilder/funktionen/Funktion_4.png);
+}
+
+.content-container{
+    padding: 3rem;
+}
+
+.content-container p{
+    width: 25%;
+}
+
+/* Section 5 */
+.section-5{
+    background-image: url(bilder/UI.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding: 3rem;
+}
+
+.section-5 p{
+    padding-right: 7rem;
+}
+#indent{
+    width: 25%;
+    padding-left: 3rem;
+    background-color: white;
+}
+
+/* Section 6 */
+.slide-5 {
+    background-image: url(bilder/vorteile/vorteil_1.png);
+  }
+
+  .slide-6 {
+    background-image: url(bilder/vorteile/Vorteil_2.png);
+  }
+
+  .slide-7 {
+    background-image: url(bilder/vorteile/vorteil_3.png);
+  }
+
+  .slide-8 {
+    background-image: url(bilder/vorteile/Vorteil_4.png);
+  }
+
+  .indent{
+    padding-left: 7rem;
+  }

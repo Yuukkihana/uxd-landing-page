@@ -24,42 +24,46 @@
   <body>
     <section class="parallax section-1">
       <div id="container-flex">
-      <div id="logo"><img src="bilder/logo.png" alt="Smart Scent Logo" /></div>
-      <div id="text"><h1>Das Add-On um deine Sinne zu erweitern</h1></div></div>
+        <div id="logo">
+          <img src="bilder/logo.png" alt="Smart Scent Logo" />
+        </div>
+        <div id="text"><h1>Das Add-On um deine Sinne zu erweitern</h1></div>
+      </div>
     </section>
 
     <section class="parallax section-2">
       <h2>Einen Chip für jeden</h2>
       <div class="flex-container">
-        <div class="flex-column">
-          <img src="bilder/chip.png" alt="Bild von Chip" id="chip-img" />
-        </div>
-        <div class="flex-column">
+        <div class="flex-small-container">
           <div class="flex-row">
-            <div>
-              <h3>kompatibel</h3>
-              <p>
-                Den Smart Scents Chip kannst du in jede gängige Smart Glasses
-                einsetzen. Damit jeder von unserem Add-On profitieren kann.
-              </p>
+            <div class="flex-column">
+              <div>
+                <h3>kompatibel</h3>
+                <p>
+                  Den Smart Scents Chip kannst du in jede gängige Smart Glasses
+                  einsetzen. Damit jeder von unserem Add-On profitieren kann.
+                </p>
+              </div>
             </div>
-            <div>
-              <h3>handlich</h3>
-              <p>
-                Durch seine beschauliche Größe kannst du den Chip vollkommen
-                unscheinbar in deine Smart Glasses einbauen.
-              </p>
+            <div class="flex-column">
+              <div>
+                <h3>handlich</h3>
+                <p>
+                  Durch seine beschauliche Größe kannst du den Chip vollkommen
+                  unscheinbar in deine Smart Glasses einbauen.
+                </p>
+              </div>
             </div>
           </div>
           <div class="flex-row">
-            <div>
+            <div class="flex-column">
               <h3>innovativ</h3>
               <p>
                 Mit unserer neuesten Technologie bist du ganz am Zahn der Zeit:
                 erweitere deine Sinne so leicht wie nie zuvor!
               </p>
             </div>
-            <div>
+            <div class="flex-column">
               <h3>grenzenlos</h3>
               <p>
                 Mit deiner erweiterten Smart Glasses hast du nun grenzenlose
@@ -68,143 +72,187 @@
             </div>
           </div>
         </div>
+        <div class="flex-small-container">
+          <img src="bilder/chip.png" alt="Bild von Chip" id="chip-img" />
+        </div>
       </div>
     </section>
 
     <section class="parallax section-3">
       <div class="card">
-        <img src="bilder/icons/auge.png" alt="Icon von Auge" />
-        <h3>visuell</h3>
-        <p>
-          Über das ansprechende und einfache User Interface wirst du ohne
-          Umstände über Auffälligkeiten, die der Chip aufnimmt, informiert.
-        </p>
+        <div class="img-container">
+          <img src="bilder/icons/auge.png" alt="Icon von Auge" id="auge" />
+        </div>
+        <div class="container">
+          <h3>visuell</h3>
+          <p>
+            Über das ansprechende und einfache User Interface wirst du ohne
+            Umstände über Auffälligkeiten, die der Chip aufnimmt, informiert.
+          </p>
+        </div>
+      </div>
+      <div class="card" id="card-middle">
+        <div class="img-container">
+          <img src="bilder/icons/nase.png" alt="Icon von Nase" id="nase" />
+        </div>
+        <div class="container">
+          <h3>olfaktorisch</h3>
+          <p>
+            Durch die erweiterte Geruchswahrnehmung nimmst du deine Umwelt ganz
+            neu auf! Unser Sensor nimmt selbst die feinsten Gerüche wahr und
+            bietet dir damit ein einzigartiges Nutzungserlebnis.
+          </p>
+        </div>
       </div>
       <div class="card">
-        <img src="bilder/icons/nase.png" alt="Icon von Nase" />
-        <h3>olfaktorisch</h3>
-        <p>
-          Durch die erweiterte Geruchswahrnehmung nimmst du deine Umwelt ganz
-          neu auf! Unser Sensor nimmt selbst die feinsten Gerüche wahr und
-          bietet dir damit ein einzigartiges Nutzungserlebnis.
-        </p>
-      </div>
-      <div class="card">
-        <img src="bilder/icons/ohr.png" alt="Icon von Ohr" />
-        <h3>auditiv</h3>
-        <p>
-          Über die auditive Ebene wirst du auf Warnungen oder Auffälligkeiten
-          aufmerksam gemacht. Aber keine Sorge: in ungefährlichen Situationen
-          sind diese sehr subtil und nicht störend.
-        </p>
+        <div class="container">
+          <div class="img-container">
+            <img src="bilder/icons/ohr.png" alt="Icon von Ohr" id="ohr" />
+          </div>
+          <h3>auditiv</h3>
+          <p>
+            Über die auditive Ebene wirst du auf Warnungen oder Auffälligkeiten
+            aufmerksam gemacht. Aber keine Sorge: in ungefährlichen Situationen
+            sind diese sehr subtil und nicht störend.
+          </p>
+        </div>
       </div>
     </section>
 
     <section class="parallax slides section-4">
-      <div class="slide">
-        <h2>Funktionen</h2>
-        <h4>Allergene erkennen</h4>
-        <p>
-          Mit deiner besseren Nase musst du dir keine Sorgen mehr um deine
-          Unverträglichkeiten machen! Unser Sensor nimmt selbst kleine Spuren
-          von Inhaltsstoffen auf und warnt dich dadurch jederzeit vor
-          Allergenen. So kannst du dein Essen mit sicherem Gefühl genießen!
-        </p>
+      <div class="slide slide-1">
+        <div class="content-container">
+          <h2>Funktionen</h2>
+          <div class="indent">
+          <h4>Allergene erkennen</h4>
+          <p>
+            Mit deiner besseren Nase musst du dir keine Sorgen mehr um deine
+            Unverträglichkeiten machen! Unser Sensor nimmt selbst kleine Spuren
+            von Inhaltsstoffen auf und warnt dich dadurch jederzeit vor
+            Allergenen. So kannst du dein Essen mit sicherem Gefühl genießen!
+          </p></div>
+        </div>
       </div>
-      <div class="slide">
-        <h2>Funktionen</h2>
-        <h4>Warnung in gefährlichen Situationen</h4>
-        <p>
-          Stoffe wie Kohlenstoffmonoxid oder Chlor können bereits in kleinen
-          Mengen immense Schäden anrichten. Für uns Menschen sind diese Gase
-          nicht wahrnehmbar. Hier kommt Smart Scent ins Spiel: durch die
-          hochmoderne Technologie werden toxische Gase sofort erkannt. In diesem
-          Fall erhältst du eine explizite Warnung über visuelle und auditive
-          Indikatoren.
-        </p>
+      <div class="slide slide-2">
+        <div class="content-container">
+          <h2>Funktionen</h2>
+          <div class="indent">
+          <h4>Warnung in gefährlichen Situationen</h4>
+          <p>
+            Stoffe wie Kohlenstoffmonoxid oder Chlor können bereits in kleinen
+            Mengen immense Schäden anrichten. Für uns Menschen sind diese Gase
+            nicht wahrnehmbar. Hier kommt Smart Scent ins Spiel: durch die
+            hochmoderne Technologie werden toxische Gase sofort erkannt. In
+            diesem Fall erhältst du eine explizite Warnung über visuelle und
+            auditive Indikatoren.
+          </p></div>
+        </div>
       </div>
-      <div class="slide">
-        <h2>Funktionen</h2>
-        <h4>Entdeckungen am Wegesrand</h4>
-        <p>
-          Mit dem Smart Scents Sensor entgeht dir nichts mehr: Egal ob auf
-          großen Wanderungen oder dem abendlichen Spaziergang durch die
-          Nachbarschaft. Im Entdeckungsmodus macht dich deine Smart Glasses auf
-          essbare Pflanzen oder heilsame Kräuter aufmerksam. So nimmst du deine
-          Umwelt ganz anders wahr und entdeckst ständig neue Dinge!
-        </p>
+      <div class="slide slide-3">
+        <div class="content-container">
+          <h2>Funktionen</h2>
+          <div class="indent">
+          <h4>Entdeckungen am Wegesrand</h4>
+          <p>
+            Mit dem Smart Scents Sensor entgeht dir nichts mehr: Egal ob auf
+            großen Wanderungen oder dem abendlichen Spaziergang durch die
+            Nachbarschaft. Im Entdeckungsmodus macht dich deine Smart Glasses
+            auf essbare Pflanzen oder heilsame Kräuter aufmerksam. So nimmst du
+            deine Umwelt ganz anders wahr und entdeckst ständig neue Dinge!
+          </p></div>
+        </div>
       </div>
-      <div class="slide">
-        <h2>Funktionen</h2>
-        <h4>Krankheiten frühzeitig erkennen</h4>
-        <p>
-          Eine Erkältung kann leicht abgeschwächt oder ganz verhindert werden,
-          wenn sie frühzeitig erkannt und bekämpft wird. Smart Scents kann auf
-          der olfaktorischen Ebene auch die kleinsten Unstimmigkeiten aufnehmen
-          und dich auf Erkrankungen aufmerksam machen, bevor du selbst Symptome
-          wahrnimmst. So bleibst du fit!
-        </p>
+      <div class="slide slide-4">
+        <div class="content-container">
+          <h2>Funktionen</h2>
+          <div class="indent">
+          <h4>Krankheiten frühzeitig erkennen</h4>
+          <p>
+            Eine Erkältung kann leicht abgeschwächt oder ganz verhindert werden,
+            wenn sie frühzeitig erkannt und bekämpft wird. Smart Scents kann auf
+            der olfaktorischen Ebene auch die kleinsten Unstimmigkeiten
+            aufnehmen und dich auf Erkrankungen aufmerksam machen, bevor du
+            selbst Symptome wahrnimmst. So bleibst du fit!
+          </p></div>
+        </div>
       </div>
     </section>
 
     <section class="parallax section-5">
       <h2>Das User Interface</h2>
+      <div id="indent">
       <h4>einfach & unkompliziert</h4>
       <p>
         Unser User Interface versorgt dich mit allen für dich wichtigen
-        Informationen. <br> Dabei wirst du allerdings nicht von einer Flut an
-        Informationen überschüttet - ganz im Gegenteil: Dein Sichtfeld wird von
-        den Indikatoren nicht beeinträchtigt. <br> Du entscheidest was und wie viel
-        du sehen willst: Bei Bedarf liefern wir dir gerne detailliertere
-        Informationen.
-      </p>
+        Informationen. <br /> <br>
+        Dabei wirst du allerdings nicht von einer Flut an Informationen
+        überschüttet - ganz im Gegenteil: Dein Sichtfeld wird von den
+        Indikatoren nicht beeinträchtigt. <br /> <br>
+        Du entscheidest was und wie viel du sehen willst: Bei Bedarf liefern wir
+        dir gerne detailliertere Informationen.
+      </p></div>
     </section>
 
     <section class="parallax section-6">
-      <div class="slide">
-        <h2>Vorteile</h2>
-        <h4>Diskret</h4>
-        <p>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-          nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-          volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-          ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-        </p>
+      <div class="slide slide-5">
+        <div class="content-container">
+          <h2>Vorteile</h2>
+          <div class="indent">
+          <h4>Diskret</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+            ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+            consequat.
+          </p></div>
+        </div>
       </div>
-      <div class="slide">
-        <h2>Vorteile</h2>
-        <h4>Erweiterung deiner Sinne</h4>
-        <p>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-          nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-          volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-          ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-        </p>
+      <div class="slide slide-6">
+        <div class="content-container">
+          <h2>Vorteile</h2>
+          <div class="indent">
+          <h4>Erweiterung deiner Sinne</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+            ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+            consequat.
+          </p></div>
+        </div>
       </div>
-      <div class="slide">
-        <h2>Vorteile</h2>
-        <h4>Kompatibel mit allen gängigen Smart Classes</h4>
-        <p>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-          nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-          volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-          ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-        </p>
+      <div class="slide slide-7">
+        <div class="content-container">
+          <h2>Vorteile</h2>
+          <div class="indent">
+            <h4>Kompatibel mit allen gängigen Smart Classes</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+              erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
+              tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+              consequat.
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="slide">
-        <h2>Vorteile</h2>
-        <h4>Erleichtert den Alltag</h4>
-        <p>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-          nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-          volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-          ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-        </p>
+      <div class="slide slide-8">
+        <div class="content-container">
+          <h2>Vorteile</h2>
+          <div class="indent">
+          <h4>Erleichtert den Alltag</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+            ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+            consequat.
+          </p></div>
+        </div>
       </div>
     </section>
 
-    <section class="parallax section-7">
-
-    </section>
+    <section class="parallax section-7"></section>
   </body>
 </html>
